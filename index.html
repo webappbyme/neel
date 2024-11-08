@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neel | Fitness Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with Navigation -->
+    <header>
+        <h1>Neel Fitness Center</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#calculator">Calorie Burn Calculator</a></li>
+                <li><a href="#membership">Membership Inquiry</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="animated-section">
+        <h2>Welcome!</h2>
+        <img src="fitness.jpg" alt="Fitness Center" class="section-image">
+        <p>Neel fitness center is dedicated to helping you achieve your health and wellness goals. With state-of-the-art equipment, experienced trainers, and a variety of fitness classes, we’re here to support every step of your journey.</p>
+    </section>
+
+    <!-- Calorie Burn Calculator Section -->
+    <section id="calculator" class="animated-section narrow-container">
+        <h2>Calorie Burn Calculator</h2>
+        <img src="calorie.jpg" alt="Calorie Burn" class="section-image">
+        <p>Estimate the calories burned based on workout intensity and duration.</p>
+        <form id="calorie-form">
+            <label for="intensity">Workout Intensity (Low, Moderate, High):</label>
+            <input type="text" id="intensity" name="intensity" required>
+            
+            <label for="duration">Duration (in minutes):</label>
+            <input type="number" id="duration" name="duration" required>
+            
+            <button type="submit">Calculate</button>
+        </form>
+        <p id="result"></p>
+    </section>
+
+    <!-- Membership Inquiry Section -->
+    <section id="membership" class="animated-section narrow-container">
+        <h2>Membership Inquiry</h2>
+        <img src="membership.jpg" alt="Membership Inquiry" class="section-image">
+        <p>Fill out the form below to inquire about our membership options and benefits.</p>
+        <form id="membership-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="animated-section narrow-container">
+        <h2>Contact Us</h2>
+        <img src="contact.jpg" alt="Contact Us" class="section-image">
+        <p>Contact our team for any additional information about our fitness center or services.</p>
+        <p>Email: contact@fitnesscenter.com | Phone: (123) 456-7890</p>
+    </section>
+
+    <!-- JavaScript for Interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>

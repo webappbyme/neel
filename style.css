@@ -1,0 +1,95 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #bdb2bd, #755a61);
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: #f31b75;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Section Styling */
+.animated-section {
+    padding: 20px;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #f1a1ae, hsl(342, 94%, 65%));
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.5s ease;
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Narrow Container */
+.narrow-container {
+    max-width: 500px;
+}
+
+/* Section Images */
+.section-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea, form button {
+    margin: 10px 0;
+}
+
+form input, form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Scroll Animation */
+.animated-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
